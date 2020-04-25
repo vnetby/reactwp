@@ -1,47 +1,108 @@
 @font-face {
-  font-family: "caliber";
-  src: url("../fonts/caliber/light/Caliber-Light.eot");
-  src: url("../fonts/caliber/light/Caliber-Light.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/caliber/light/Caliber-Light.svg#Caliber-Light") format("svg"),
-    url("../fonts/caliber/light/Caliber-Light.ttf") format("truetype"),
-    url("../fonts/caliber/light/Caliber-Light.woff") format("woff"),
-    url("../fonts/caliber/light/Caliber-Light.woff2") format("woff2");
+  font-family: "Roboto";
+  src: local("Roboto Thin"), local("Roboto-Thin"),
+    url("../fonts/roboto/Robotothin.woff2") format("woff2"),
+    url("../fonts/roboto/Robotothin.woff") format("woff"),
+    url("../fonts/roboto/Robotothin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Thin Italic"), local("Roboto-ThinItalic"),
+    url("../fonts/roboto/Robotothinitalic.woff2") format("woff2"),
+    url("../fonts/roboto/Robotothinitalic.woff") format("woff"),
+    url("../fonts/roboto/Robotothinitalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/roboto/Robotolight.woff2") format("woff2"),
+    url("../fonts/roboto/Robotolight.woff") format("woff"),
+    url("../fonts/roboto/Robotolight.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
-
 @font-face {
-  font-family: "caliber";
-  src: url("../fonts/caliber/regular/Caliber.eot");
-  src: url("../fonts/caliber/regular/Caliber.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/caliber/regular/Caliber.svg#Caliber") format("svg"),
-    url("../fonts/caliber/regular/Caliber.ttf") format("truetype"),
-    url("../fonts/caliber/regular/Caliber.woff") format("woff"),
-    url("../fonts/caliber/regular/Caliber.woff2") format("woff2");
-  font-weight: normal;
+  font-family: "Roboto";
+  src: local("Roboto Light Italic"), local("Roboto-LightItalic"),
+    url("../fonts/roboto/Robotolightitalic.woff2") format("woff2"),
+    url("../fonts/roboto/Robotolightitalic.woff") format("woff"),
+    url("../fonts/roboto/Robotolightitalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto/Roboto.woff2") format("woff2"),
+    url("../fonts/roboto/Roboto.woff") format("woff"),
+    url("../fonts/roboto/Roboto.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
-  font-family: "caliber";
-  src: url("../fonts/caliber/medium/Caliber-Medium.eot");
-  src: url("../fonts/caliber/medium/Caliber-Medium.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/caliber/medium/Caliber-Medium.svg#Caliber-Medium") format("svg"),
-    url("../fonts/caliber/medium/Caliber-Medium.ttf") format("truetype"),
-    url("../fonts/caliber/medium/Caliber-Medium.woff") format("woff"),
-    url("../fonts/caliber/medium/Caliber-Medium.woff2") format("woff2");
+  font-family: "Roboto";
+  src: local("Roboto Italic"), local("Roboto-Italic"),
+    url("../fonts/roboto/Robotoitalic.woff2") format("woff2"),
+    url("../fonts/roboto/Robotoitalic.woff") format("woff"),
+    url("../fonts/roboto/Robotoitalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("../fonts/roboto/Robotomedium.woff2") format("woff2"),
+    url("../fonts/roboto/Robotomedium.woff") format("woff"),
+    url("../fonts/roboto/Robotomedium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
-  font-family: "caliber";
-  src: url("../fonts/caliber/bold/Caliber-Bold.eot");
-  src: url("../fonts/caliber/bold/Caliber-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/caliber/bold/Caliber-Bold.svg#Caliber-Bold") format("svg"),
-    url("../fonts/caliber/bold/Caliber-Bold.ttf") format("truetype"),
-    url("../fonts/caliber/bold/Caliber-Bold.woff") format("woff"),
-    url("../fonts/caliber/bold/Caliber-Bold.woff2") format("woff2");
-  font-weight: bold;
+  font-family: "Roboto";
+  src: local("Roboto Medium Italic"), local("Roboto-MediumItalic"),
+    url("../fonts/roboto/Robotomediumitalic.woff2") format("woff2"),
+    url("../fonts/roboto/Robotomediumitalic.woff") format("woff"),
+    url("../fonts/roboto/Robotomediumitalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../fonts/roboto/Robotobold.woff2") format("woff2"),
+    url("../fonts/roboto/Robotobold.woff") format("woff"),
+    url("../fonts/roboto/Robotobold.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Bold Italic"), local("Roboto-BoldItalic"),
+    url("../fonts/roboto/Robotobolditalic.woff2") format("woff2"),
+    url("../fonts/roboto/Robotobolditalic.woff") format("woff"),
+    url("../fonts/roboto/Robotobolditalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Black"), local("Roboto-Black"),
+    url("../fonts/roboto/Robotoblack.woff2") format("woff2"),
+    url("../fonts/roboto/Robotoblack.woff") format("woff"),
+    url("../fonts/roboto/Robotoblack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Black Italic"), local("Roboto-BlackItalic"),
+    url("../fonts/roboto/Robotoblackitalic.woff2") format("woff2"),
+    url("../fonts/roboto/Robotoblackitalic.woff") format("woff"),
+    url("../fonts/roboto/Robotoblackitalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
 }

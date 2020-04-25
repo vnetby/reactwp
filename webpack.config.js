@@ -12,9 +12,9 @@ const theme = `./${SITE_CONF.SRC}`;
 
 const isDev = process.argv[2] !== '--env=build';
 
-const HEAD_SCRIPTS = env => createConfig({ entry: '/js/dev/index.head.js', outputFile: 'head.min.js', cssFileName: 'head.min.css' });
+const HEAD_SCRIPTS = env => createConfig({ entry: '/index.head.js', outputFile: 'head.min.js', cssFileName: 'head.min.css' });
 
-const SCRIPTS = env => createConfig({ entry: '/js/dev/index.js', outputFile: 'main.min.js', cssFileName: 'main.min.css' });
+const SCRIPTS = env => createConfig({ entry: '/index.js', outputFile: 'main.min.js', cssFileName: 'main.min.css' });
 
 
 
@@ -115,7 +115,7 @@ const createConfig = ({ entry, outputFile, cssFileName }) => {
     },
     plugins: [
       new ExtractTextPlugin({
-        filename: `../css/${cssFileName}`
+        filename: `./css/${cssFileName}`
       }),
       !isDev ?
         new OptimizeCssAssetsPlugin({
@@ -128,7 +128,7 @@ const createConfig = ({ entry, outputFile, cssFileName }) => {
     devtool: !isDev ? false : 'source-map',
     watch: isDev,
     watchOptions: {
-      // ignored: /node_modules/
+      ignored: /node_modules/
       // poll: 500
     }
   }
