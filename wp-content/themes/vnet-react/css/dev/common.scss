@@ -1,0 +1,27 @@
+body {
+  font-family: "caliber";
+  font-size: 16px;
+  background-color: $c-black;
+  color: #fff;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  transition: 0.15s;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+::selection {
+  background-color: rgba($c-grey, 90%);
+  color: $c-dark;
+}

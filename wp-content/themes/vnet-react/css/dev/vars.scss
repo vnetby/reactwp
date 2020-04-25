@@ -1,0 +1,27 @@
+$c-black: #000;
+$c-gold: #ffc83c;
+$c-grey: #9ea4ae;
+$c-dgrey: #4b4e53;
+$c-dark: #131414;
+
+.c-black,
+a.c-black {
+  color: $c-black;
+}
+.c-gold,
+a.c-gold {
+  color: $c-gold;
+}
+.c-grey,
+a.c-grey {
+  color: $c-grey;
+}
+.c-dgrey,
+a.c-dgrey {
+  color: $c-dgrey;
+}
+
+.c-dark,
+a.c-dark {
+  color: $c-dark;
+}
