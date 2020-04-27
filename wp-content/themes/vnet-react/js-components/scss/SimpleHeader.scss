@@ -1,0 +1,13 @@
+.simple-header {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  .page-title {
+    font-size: 120px;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  }
+}

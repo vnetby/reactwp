@@ -1,4 +1,5 @@
 <?php
+
 /**
  * vnet-theme functions and definitions
  *
@@ -16,7 +17,7 @@ if (!class_exists('acf')) {
 }
 
 
-require(dirname(__FILE__) . '/includes/global_vars.php');
+
 
 require(CURRENT_PATH . 'inc/register_post_types.php');
 require(CURRENT_PATH . 'inc/register_taxonomies.php');
@@ -413,6 +414,3 @@ function vnet_theme_widgets_init()
     'after_title'   => '</h2>',
   ));
 }
-
-
-

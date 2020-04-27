@@ -115,7 +115,7 @@ const createConfig = ({ entry, outputFile, cssFileName }) => {
     },
     plugins: [
       new ExtractTextPlugin({
-        filename: `./css/${cssFileName}`
+        filename: `../css/${cssFileName}`
       }),
       !isDev ?
         new OptimizeCssAssetsPlugin({
