@@ -4,6 +4,9 @@ require(realpath(dirname(__FILE__) . '/../vnet_theme/includes/global_vars.php'))
 
 require(realpath(dirname(__FILE__) . '/../vnet_theme/functions-global.php'));
 
+require(CURRENT_PATH . 'inc/globals.php');
+
+require(CURRENT_PATH . 'inc/route.php');
 require(CURRENT_PATH . 'inc/ajax-functions.php');
 
 add_action('admin_init', 'remove_blocks_post_type_support');
@@ -21,6 +24,16 @@ function remove_blocks_post_type_support()
   remove_post_type_support('the_blocks', 'revisions');
   remove_post_type_support('the_blocks', 'page-attributes');
   remove_post_type_support('the_blocks', 'post-formats');
+
+  remove_post_type_support('about_company', 'editor');
+  remove_post_type_support('about_company', 'title');
+  remove_post_type_support('about_company', 'author');
+  remove_post_type_support('about_company', 'trackbacks');
+  remove_post_type_support('about_company', 'excerpt');
+  remove_post_type_support('about_company', 'comments');
+  remove_post_type_support('about_company', 'revisions');
+  remove_post_type_support('about_company', 'page-attributes');
+  remove_post_type_support('about_company', 'post-formats');
 
   remove_post_type_support('articles', 'editor');
   remove_post_type_support('articles', 'trackbacks');

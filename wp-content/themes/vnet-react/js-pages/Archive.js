@@ -1,6 +1,7 @@
 import React from "react";
 import { SimpleHeader } from "../js-components/SimpleHeader";
 import { Link } from "../js-components/Link";
+import { LazyImg } from "../js-components/LazyImg";
 
 import "./scss/Archive.scss";
 
@@ -39,7 +40,7 @@ export const SinglePostLoop = ({ post }) => {
   return (
     <div className="single-post-loop">
       <div className="thumb">
-        {post.thumb ? <img src={post.thumb} alt="thumbnail" /> : null}
+        {post.thumb ? <LazyImg src={post.thumb} alt="thumbnail" /> : null}
       </div>
       <div className="content">
         <h3 className="title">

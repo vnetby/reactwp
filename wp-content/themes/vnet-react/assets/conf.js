@@ -5,11 +5,11 @@ const ABSPATH = `./${SITE_CONF.SRC}/assets`;
 
 const assets = [
   // "jquery3",
-  // "hamburgers",
-  "animate-css",
-  "fancybox",
-  "niceSelect",
-  "slick"
+  "hamburgers",
+  "animate-css"
+  // "fancybox",
+  // "niceSelect",
+  // "slick"
   // "parallax"
   // "overlay-scrollbar",
   // "chart-js",

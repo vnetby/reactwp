@@ -14,11 +14,11 @@
 
   <link rel="stylesheet" href="<?= CURRENT_SRC; ?>style.css">
 
+  <?php
+  $about = get_field('about-company', ABOUT_POST);
+  ?>
   <script>
-    window.back_dates = {
-      ajaxurl: '<?= admin_url('admin-ajax.php'); ?>',
-      src: '<?= CURRENT_SRC; ?>'
-    }
+    back_dates.about = JSON.parse('<?= stripslashes(json_encode($about)); ?>');
   </script>
 </head>
 

@@ -9,4 +9,5 @@
  */
 
 get_header();
+echo 'adasdas';
 get_footer();

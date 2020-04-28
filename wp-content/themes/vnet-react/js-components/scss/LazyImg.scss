@@ -1,0 +1,8 @@
+.loading-image {
+  opacity: 0;
+  transition: 0.2s;
+  background-color: #d3d3d3;
+  &.loaded {
+    opacity: 1;
+  }
+}

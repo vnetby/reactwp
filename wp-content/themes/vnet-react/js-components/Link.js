@@ -3,9 +3,9 @@ import { dom } from "vnet-dom";
 
 
 
-export const Link = ({ title, target, href, className, children }) => {
+export const Link = ({ title, target, href, className, children, onClick }) => {
   return (
-    <a href={href} className={className ? className : null} title={title ? title : null} target={target ? target : null} onClick={e => { e.preventDefault(); changeUrl(href) }} >
+    <a href={href} className={className ? className : null} title={title ? title : null} target={target ? target : null} onClick={e => { e.preventDefault(); changeUrl(href); onClick && onClick(e); }} >
       {children}
     </a>
   );

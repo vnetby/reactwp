@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Archive, Page, NotFound } from "../js-pages";
+import { Archive, Page, NotFound, Term } from "../js-pages";
 import { dom } from "vnet-dom";
 
 
@@ -41,7 +41,11 @@ export const Router = () => {
   }
 
   if (pageData.type === 'archive') {
-    return <Archive data={pageData} />
+    return <Archive data={pageData} />;
+  }
+
+  if (pageData.type === 'term') {
+    return <Term data={pageData} />;
   }
 
   return <NotFound />;

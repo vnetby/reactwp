@@ -3,6 +3,7 @@ import "./scss/SimpleHeader.scss";
 
 
 export const SimpleHeader = ({ bg, title, subtitle }) => {
+  return <></>;
   return (
     <header className="header simple-header">
       {bg ? <div className="bg-img"><img src={bg} /></div> : null}

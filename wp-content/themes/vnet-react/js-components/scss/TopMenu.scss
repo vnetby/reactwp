@@ -1,0 +1,134 @@
+@import "../../css/dev/vars.scss";
+
+.offcanvas-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  background-color: #121212;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+  &:not(.active) {
+    transform: translateX(-100%);
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+  }
+  .menu-item {
+    margin-bottom: 40px;
+    position: relative;
+    &:not(.current-menu-item) a {
+      opacity: 0.6;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &.current-menu-item > a:after {
+      content: "";
+      display: block;
+      width: 0px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $c-red;
+      position: absolute;
+      left: calc(100% + 20px);
+      top: calc(50% - 2px);
+
+      transition-timing-function: ease-in;
+    }
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.07, 0.51, 0.12, 1);
+    transform: translateX(-100px);
+  }
+  &.active .menu-item {
+    transform: none;
+    transition-delay: 0.05s;
+    a:after {
+      transition-delay: 0.5s;
+      transition-duration: 0.2s;
+      width: 70px;
+    }
+    &:nth-child(2) {
+      transition-delay: 0.1s;
+    }
+    &:nth-child(3) {
+      transition-delay: 0.15s;
+    }
+    &:nth-child(4) {
+      transition-delay: 0.2s;
+    }
+    &:nth-child(5) {
+      transition-delay: 0.25s;
+    }
+    &:nth-child(6) {
+      transition-delay: 0.3s;
+    }
+    &:nth-child(7) {
+      transition-delay: 0.35s;
+    }
+  }
+  .container {
+    height: 100%;
+    display: flex;
+  }
+  .top-menu {
+    margin: auto 0;
+  }
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  .container {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .hamburger {
+    position: relative;
+    z-index: 1001;
+    padding: 0;
+    margin-left: auto;
+  }
+  .hamburger-inner,
+  .hamburger-inner:after,
+  .hamburger-inner:before,
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner:after,
+  .hamburger.is-active .hamburger-inner:before {
+    background-color: #fff;
+  }
+
+  .top-logo-link {
+    display: flex;
+    align-items: center;
+  }
+  .top-logo {
+    position: relative;
+    z-index: 1001;
+  }
+  .logo-text {
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.6;
+    text-transform: uppercase;
+  }
+}

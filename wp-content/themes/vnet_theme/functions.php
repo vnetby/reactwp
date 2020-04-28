@@ -151,7 +151,7 @@ function add_back_dates_var()
     var woof_lang_loading = "Поиск ...";
 
     var back_dates = {
-      'ajax_url': '<?= admin_url("admin-ajax.php"); ?>',
+      'ajaxurl': '<?= admin_url("admin-ajax.php"); ?>',
       'SRC': '<?= CURRENT_SRC; ?>',
       'url': '<?= get_site_url(); ?>',
       'catalog': '<?= get_permalink(get_page_by_path('shop')); ?>',

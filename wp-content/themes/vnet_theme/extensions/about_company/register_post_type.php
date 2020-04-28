@@ -1,27 +1,28 @@
 <?php
 
-add_action ( 'init', 'register_about_company_post_type' );
+add_action('init', 'register_about_company_post_type');
 
-add_action( 'admin_init', 'remove_about_company_post_supports' );
+add_action('admin_init', 'remove_about_company_post_supports');
 
 
 
-function remove_about_company_post_supports () {
-  remove_post_type_support( 'about_company', 'editor' );
-  remove_post_type_support( 'about_company', 'title' );
-  remove_post_type_support( 'about_company', 'author' );
-  remove_post_type_support( 'about_company', 'excerpt' );
-  remove_post_type_support( 'about_company', 'trackbacks' );
-  remove_post_type_support( 'about_company', 'comments' );
-  remove_post_type_support( 'about_company', 'revisions' );
-  remove_post_type_support( 'about_company', 'page-attributes' );
-  remove_post_type_support( 'about_company', 'post-formats' );
+function remove_about_company_post_supports()
+{
+  remove_post_type_support('about_company', 'editor');
+  remove_post_type_support('about_company', 'title');
+  remove_post_type_support('about_company', 'author');
+  remove_post_type_support('about_company', 'excerpt');
+  remove_post_type_support('about_company', 'trackbacks');
+  remove_post_type_support('about_company', 'comments');
+  remove_post_type_support('about_company', 'revisions');
+  remove_post_type_support('about_company', 'page-attributes');
+  remove_post_type_support('about_company', 'post-formats');
 }
 
 
-function register_about_company_post_type () {
-
-  register_post_type ( 'about_company', [
+function register_about_company_post_type()
+{
+  register_post_type('about_company', [
     'labels' => [
       'name'              => 'О компании',
       'singular_name'     => 'О компании',
@@ -58,6 +59,4 @@ function register_about_company_post_type () {
     '_builtin'              => false,
     '_edit_link'            => 'post.php?post=%d'
   ]);
-
 }
-
